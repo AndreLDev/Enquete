@@ -1,0 +1,74 @@
+/* src/pages/ListaEnquetes/style.css */
+
+.container {
+  text-align: center;
+}
+
+.enquete-list {
+  padding: 0;
+  list-style: none;
+}
+
+.enquete-list-item {
+  margin-bottom: 10px;
+}
+
+.enquete-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #008deb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  min-width: 200px;
+}
+
+.enquete-link:hover {
+  background-color: #2980b9;
+}
+
+/* Estilização para os botões de cadastrar e voltar */
+.enquete-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adicionado espaçamento entre a lista de enquetes e os botões */
+  
+}
+
+.enquete-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #2ecc71; /* Cor diferente para o botão de cadastrar */
+  
+}
+
+.voltar-button {
+  background-color: #e74c3c; /* Cor diferente para o botão de voltar */
+}
+
+/* Estilização para as opções */
+.enquete-options {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte quando não houver espaço suficiente */
+}
+
+.enquete-option {
+  margin: 0 5px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.enquete-option:hover {
+  background-color: #2980b9;
+}

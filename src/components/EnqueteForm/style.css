@@ -1,0 +1,40 @@
+/* src/components/EnqueteForm/style.css */
+
+.EnqueteForm {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.EnqueteForm label {
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.EnqueteForm input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.EnqueteForm button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.EnqueteForm button:hover {
+  background-color: #45a049;
+}

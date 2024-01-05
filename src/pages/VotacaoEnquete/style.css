@@ -1,0 +1,24 @@
+/* src/pages/VotacaoEnquete/style.css */
+
+.container {
+  text-align: center;
+}
+
+.enquete-list-item {
+  margin-bottom: 10px;
+}
+
+.enquete-button {
+  display: inline-block;
+  padding: 10px 20px;
+  min-width: 150px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.enquete-button:hover {
+  background-color: #2980b9;
+}

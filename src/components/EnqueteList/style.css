@@ -1,0 +1,8 @@
+.enquete-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .enquete-list-item {
+    margin-bottom: 10px;
+  }
