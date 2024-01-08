@@ -1,7 +1,6 @@
-// src/components/EnqueteForm/EnqueteForm.tsx
 import React, { useState, FormEvent } from 'react';
 import firebase from '../../firebase';
-import './style.css'; // Importe o arquivo de estilo CSS
+import './style.css';
 
 interface EnqueteFormProps {
   onEnqueteAdded: () => void;
@@ -9,7 +8,7 @@ interface EnqueteFormProps {
 
 const EnqueteForm: React.FC<EnqueteFormProps> = ({ onEnqueteAdded }) => {
   const [pergunta, setPergunta] = useState('');
-  const [opcoes, setOpcoes] = useState(['', '']); // Adicionado estado para opções
+  const [opcoes, setOpcoes] = useState(['', '']); 
 
   const handleAddEnquete = (e: FormEvent) => {
     e.preventDefault();
@@ -23,9 +22,9 @@ const EnqueteForm: React.FC<EnqueteFormProps> = ({ onEnqueteAdded }) => {
 
       enqueteRef.push(novaEnquete);
       setPergunta('');
-      setOpcoes(['', '']); // Limpa as opções
+      setOpcoes(['', '']); 
 
-      onEnqueteAdded(); // Callback para indicar que a enquete foi adicionada
+      onEnqueteAdded(); 
     }
   };
 

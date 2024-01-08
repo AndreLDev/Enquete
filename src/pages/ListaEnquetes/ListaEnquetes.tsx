@@ -1,4 +1,3 @@
-// src/pages/ListaEnquetes/ListaEnquetes.tsx
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import EnqueteList from '../../components/EnqueteList/EnqueteList';
@@ -51,13 +50,16 @@ const ListaEnquetes: React.FC = () => {
           ))}
         </ul>
       )}
-      <Link to="/cadastro" className="button-link cadastrar-button">
-        Cadastrar Nova Enquete
-      </Link>
-      <br />
-      <Link to="/" className="button-link voltar-button">
-        Voltar para Home
-      </Link>
+      
+        <Link to="/cadastro" className="link">
+          Cadastrar Nova Enquete
+        </Link>
+        <br />
+        <Link to="/" className="link">
+          Voltar para Home
+        </Link>
+      
+
     </div>
   );
 };

@@ -1,0 +1,46 @@
+/* src/pages/ResultadosEnquete/style.css */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .enquete-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .enquete-question {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .enquete-results-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .enquete-results-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .enquete-option {
+    font-weight: bold;
+  }
+  
+  .enquete-votes {
+    color: #333;
+  }
+
+  .link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

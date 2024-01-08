@@ -1,8 +1,29 @@
-.enquete-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .enquete-list-item {
-    margin-bottom: 10px;
-  }
+.EnqueteList {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.EnqueteList h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.EnqueteList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.EnqueteList li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.EnqueteList li:hover {
+  background-color: #f0f0f0;
+}

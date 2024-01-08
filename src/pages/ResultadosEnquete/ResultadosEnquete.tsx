@@ -1,16 +1,17 @@
-// src/pages/VotacaoEnquete/VotacaoEnquete.tsx
+// src/pages/ResultadosEnquete/ResultadosEnquete.tsx
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import firebase from '../../firebase';
-import EnqueteChart from '../../components/EnqueteChart/EnqueteChart';
+import './style.css'; // Adição da importação do arquivo de estilo
 
 interface Enquete {
   id: string;
   pergunta: string;
   opcoes: string[];
+  votos: { [key: string]: number };
 }
 
-const VotacaoEnquete: React.FC = () => {
+const ResultadosEnquete: React.FC = () => {
   const { enqueteId } = useParams<{ enqueteId: string }>();
   const [enquete, setEnquete] = useState<Enquete | null>(null);
 
@@ -38,11 +39,19 @@ const VotacaoEnquete: React.FC = () => {
     <div className="container">
       {enquete ? (
         <div>
-          <h2>Votação na Enquete</h2>
-          <EnqueteChart enquete={enquete} />
+          <h2 className="enquete-title">Resultados da Enquete</h2>
+          <h3 className="enquete-question">{enquete.pergunta}</h3>
+          <ul className="enquete-results-list">
+            {enquete.opcoes.map((opcao, index) => (
+              <li key={index} className="enquete-results-item">
+                <span className="enquete-option">{opcao}:</span>
+                <span className="enquete-votes">
+                  {Object.values(enquete.votos).filter((v) => v === index).length} votos
+                </span>
+              </li>
+            ))}
+          </ul>
           <Link to="/lista" className="link">Voltar para Lista de Enquetes</Link>
-          <br />
-          <Link to={`/resultados/${enqueteId}`} className="link">Ver Resultados</Link>
         </div>
       ) : (
         <p>Carregando...</p>
@@ -51,4 +60,4 @@ const VotacaoEnquete: React.FC = () => {
   );
 };
 
-export default VotacaoEnquete;
+export default ResultadosEnquete;

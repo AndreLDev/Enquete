@@ -1,7 +1,6 @@
-// src/components/EnqueteChart/EnqueteChart.tsx
 import React, { useState } from 'react';
 import firebase from '../../firebase';
-import './style.css'; // Importe o arquivo de estilo CSS
+import './style.css'; 
 
 interface Enquete {
   id: string;
@@ -18,14 +17,12 @@ const EnqueteChart: React.FC<EnqueteChartProps> = ({ enquete }) => {
 
   const handleVotar = (opcaoIndex: number) => {
     setVoto(opcaoIndex);
-
-    // Adicione a lógica para enviar o voto para o Firebase aqui
     const enqueteRef = firebase.database().ref(`enquetes/${enquete.id}/votos`);
     enqueteRef.push(opcaoIndex);
   };
 
   return (
-    <div className="EnqueteChart"> {/* Adicione a classe ao elemento div */}
+    <div className="EnqueteChart">
       <h3>{enquete.pergunta}</h3>
       <ul>
         {enquete.opcoes.map((opcao, index) => (

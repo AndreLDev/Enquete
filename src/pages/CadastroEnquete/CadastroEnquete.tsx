@@ -1,8 +1,7 @@
-// src/pages/CadastroEnquete/CadastroEnquete.tsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import EnqueteForm from '../../components/EnqueteForm/EnqueteForm';
-import './style.css'; // Importe o arquivo de estilo CSS
+import './style.css'; 
 
 const CadastroEnquete: React.FC = () => {
   const [isEnqueteAdded, setEnqueteAdded] = useState(false);

@@ -1,7 +1,6 @@
-// src/components/EnqueteList/EnqueteList.tsx
 import React, { useEffect, useState } from 'react';
 import firebase from '../../firebase';
-import './style.css'; // Importe o arquivo de estilo CSS
+import './style.css';
 
 interface Enquete {
   id: string;
@@ -30,7 +29,7 @@ const EnqueteList: React.FC = () => {
   }, []);
 
   return (
-    <div className="EnqueteList"> {/* Adicione a classe ao elemento div */}
+    <div className="EnqueteList">
       <h2>Lista de Enquetes</h2>
       <ul>
         {enquetes.map((enquete) => (
