@@ -1,8 +1,7 @@
-// src/pages/ResultadosEnquete/ResultadosEnquete.tsx
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import firebase from '../../firebase';
-import './style.css'; // Adição da importação do arquivo de estilo
+import './style.css';
 
 interface Enquete {
   id: string;
